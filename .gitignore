@@ -1,0 +1,14 @@
+# Build outputs and local tools
+**/build/
+**/dist/
+**/.gradle/
+**/node_modules/
+**/local.properties
+*.log
+*.apk
+*.exe
+*.zip
+.downloads/
+**/vits-piper-vi_VN-vais1000-medium/
+**/sherpa-onnx-*.aar
+
