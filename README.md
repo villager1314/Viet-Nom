@@ -19,8 +19,9 @@
 
 要求：JDK 17 或 21、Android SDK 35、Gradle 8.13。
 
-1. 在 `android/local.properties` 写入 `sdk.dir=你的 Android SDK 路径`。
-2. 在 `android/` 执行：
+1. 先运行根目录的 `prepare-assets.ps1` 下载官方语音模型和 Android AAR，并按脚本提示放入 Han-Nom Khai 字体。
+2. 在 `android/local.properties` 写入 `sdk.dir=你的 Android SDK 路径`。
+3. 在 `android/` 执行：
 
 ```powershell
 gradle assembleRelease
