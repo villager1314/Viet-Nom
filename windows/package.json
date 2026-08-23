@@ -1,0 +1,8 @@
+{
+  "name":"viet-nom-desktop","version":"1.0.2","description":"离线越南语转汉喃与越南语朗读工具","author":"Viet Nom","main":"main.js","type":"commonjs",
+  "scripts":{"dist":"electron-builder --win nsis --x64"},
+  "dependencies":{"sherpa-onnx-node":"1.13.4"},
+  "devDependencies":{"electron":"38.2.0","electron-builder":"26.0.12"},
+  "build":{"appId":"org.vietnom.desktop","productName":"越喃","asar":true,"asarUnpack":["node_modules/sherpa-onnx-node/**/*","node_modules/sherpa-onnx-win-x64/**/*"],"files":["main.js","preload.js","assets/**/*","!assets/vits-piper-vi_VN-vais1000-medium/**/*","node_modules/**/*"],"extraResources":[{"from":"assets/vits-piper-vi_VN-vais1000-medium","to":"model"}],"win":{"target":"nsis"},"nsis":{"artifactName":"viet-nom-windows-setup-${version}.exe","oneClick":true,"perMachine":false,"createDesktopShortcut":true,"createStartMenuShortcut":true,"shortcutName":"越喃"}}
+}
+
